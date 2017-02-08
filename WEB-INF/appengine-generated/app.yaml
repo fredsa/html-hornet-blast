@@ -1,0 +1,112 @@
+application: 'hornet-blast'
+runtime: java
+version: '0083cdd28de924a9ea7f196611fed77a941e5632'
+inbound_services:
+- warmup
+derived_file_type:
+- java_precompiled
+threadsafe: True
+api_version: 'none'
+handlers:
+- url: (/.*\.cache\..*\.nocache\..*/)
+  static_files: __static__\1HornetBlast.html
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+  expiration: 0s
+- url: (/)
+  static_files: __static__\1HornetBlast.html
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+- url: (/.*\.nocache\..*\.cache\..*/)
+  static_files: __static__\1HornetBlast.html
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+  expiration: 0s
+- url: (/.*\.cache\..*/)
+  static_files: __static__\1HornetBlast.html
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+  expiration: 365d
+- url: (/.*\.cache\..*\.nocache\..*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+  expiration: 0s
+- url: (/.*\.nocache\..*\.cache\..*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+  expiration: 0s
+- url: (/.*\.cache\..*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+  expiration: 365d
+- url: (/.*\.nocache\..*/)
+  static_files: __static__\1HornetBlast.html
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+  expiration: 0s
+- url: (/.*/)
+  static_files: __static__\1HornetBlast.html
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+- url: (/.*\.nocache\..*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+  expiration: 0s
+- url: (/.*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+- url: /hornetblast/gwt-log
+  script: unused
+  login: optional
+  secure: optional
+- url: /games/gwt-log
+  script: unused
+  login: optional
+  secure: optional
+- url: /batblast/gwt-log
+  script: unused
+  login: optional
+  secure: optional
+- url: /space/gwt-log
+  script: unused
+  login: optional
+  secure: optional
+- url: /
+  script: unused
+  login: optional
+  secure: optional
+- url: /.*/
+  script: unused
+  login: optional
+  secure: optional
+- url: /_ah/.*
+  script: unused
+  login: optional
+  secure: optional

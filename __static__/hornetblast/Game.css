@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+* {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+HTML,BODY { /* TODO remove after GWT issue 1357 is fixed */
+  height: 100%;
+}
+
+HTML,BODY { /* TODO remove after GWT issue 1390 is fixed */
+  overflow: hidden;
+}
+
+HTML,BODY {
+  margin: 0px;
+  padding: 0px;
+}
+
+.game .game-layer-overlay {
+  z-index: 5;
+}
+
+.game .game-layer-inputPanel {
+  opacity: 0;
+  filter: alpha(opacity = 0);
+  background-color: white;
+  z-index: 4;
+}
+
+.game .explosion-sprite {
+  z-index: 3;
+}
+
+.game .player-sprite {
+  z-index: 2;
+}
+
+.game .bullet-sprite {
+  z-index: 1;
+}
+
+.game .game-layer-playfield {
+  z-index: 1;
+}
+
+.game .game-layer-background {
+  
+}
+
+.game .bounding-box {
+  z-index: 42;
+}
+
+.game .playerText {
+  color: red;
+}

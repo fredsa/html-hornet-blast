@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+
+/* ------------ General CSS ------------ */
+XX BODY { /* DEBUGGING */
+  border: 1px solid green;
+  background-color: #ABCDEF;
+}
+
+/* ------------ HornetLabel ------------ */
+.hornetblast .hornet-label {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.hornetblast .hornet-label .hornet-label1 ,
+.hornetblast .hornet-label .hornet-label1 A {
+  color: #0000AA; /* blue */
+}
+
+.hornetblast .hornet-label .hornet-label2 ,
+.hornetblast .hornet-label .hornet-label2 A {
+  color: #8888DD; /* light blue */
+}
+
+/* ------------ GameTimer ------------ */
+.hornetblast .timerText {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  color: #CCCCCC;
+}
+
+/* ------------ HornetKeyboardKey ------------ */
+.hornetblast TABLE.hornet-keyboard-key {
+  border: 1px solid black;
+  padding: 3px 5px 5px 5px;
+  margin: auto;
+}
+
+.hornetblast TABLE.hornet-keyboard-key TD.hornet-keyboard-key-cell {
+  padding: 0.4em 0.5em;
+  border: 1px solid #550000;
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+/* ------------ HornetOverlayPanel ------------ */
+.hornetblast .HornetOverlayPanel {
+  margin: 3em;
+}
+
+.hornetblast .hornet-key-layout {
+  margin: auto;
+}
+
+.hornetblast .hornet-label {
+  text-align: left !important;
+  -webkit-text-size-adjust: none;  
+}
+
+.hornetblast TABLE.hornet-key-layout .hornet-keyboard-key {
+  background-color: #DDDDDD; /* light gray */
+}
+
+.hornetblast TABLE.hornet-key-layout .hornet-label1 {
+  color: #AA0000; /* red */
+}
+
+.hornetblast TABLE.hornet-key-layout .hornet-label2 {
+  color: #DD8888; /* light red */
+}
+
+.hornetblast .hornet-game-state-label {
+  font-size: 2em;
+  border: 2px dashed green;
+}
+
+.hornetblast .hornet-game-state-label .hornet-label1 {
+  color: #00AA00; /* green */
+}
+
+.hornetblast .hornet-game-state-label .hornet-label2 {
+  color: #88DD88; /* light green */
+}
+
+.hornetblast .game-title {
+  font-size: 4em;
+}
+
+.hornetblast .game-title .hornet-label1 {
+  color: #FFCC00; /* gold */
+}
+
+.hornetblast .game-title .hornet-label2 {
+  color: #C9960C; /* gold */
+}
+
+/* ------------  ------------ */
