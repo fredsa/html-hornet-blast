@@ -1,0 +1,12 @@
+application: hornet-blast
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: __static__/HornetBlast.html
+  upload: __static__/HornetBlast.html
+
+- url: /
+  static_dir: __static__
